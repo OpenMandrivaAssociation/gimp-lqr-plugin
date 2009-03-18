@@ -1,5 +1,4 @@
-%define version		0.4.0
-%define tar_release	4
+%define version		0.6.1
 %define release		%mkrel 1
 
 %define name		gimp-lqr-plugin
@@ -12,9 +11,9 @@ Release:        %release
 License:        GPLv2+
 Group:          Graphics
 URL:            http://liquidrescale.wikidot.com/
-Source0:        http://liquidrescale.wikidot.com/local--files/en:download-page/%{name}-%{version}-%{tar_release}.tar.gz
+Source0:        http://liquidrescale.wikidot.com/local--files/en:download-page/%{name}-%{version}.tar.bz2
 BuildRequires:  gimp-devel >= 2.4
-BuildRequires:  liblqr-devel >= 0.1.0
+BuildRequires:  liblqr-devel >= 0.3.0
 BuildRequires:  intltool
 Requires:       gimp >= 2.4
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
@@ -44,5 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %doc AUTHORS ChangeLog NEWS README TODO
 %{_libdir}/gimp/2.0/plug-ins/%{name}
-%{_datadir}/%{name}/
-
+%{_libdir}/gimp/2.0/plug-ins/plug_in_lqr_iter
+%{_datadir}/gimp/2.0/scripts/batch-gimp-lqr.scm
+%{_datadir}/%{name}
