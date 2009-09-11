@@ -1,5 +1,5 @@
 %define version		0.6.1
-%define release		%mkrel 1
+%define release		%mkrel 2
 
 %define name		gimp-lqr-plugin
 %define gettext_name	gimp20-lqr-plugin
