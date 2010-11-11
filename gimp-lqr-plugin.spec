@@ -1,4 +1,4 @@
-%define version		0.7.0
+%define version		0.7.1
 %define release		%mkrel 1
 
 %define name		gimp-lqr-plugin
