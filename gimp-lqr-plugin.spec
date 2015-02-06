@@ -3,7 +3,7 @@
 Summary:        Content-aware image resize plug-in for GIMP
 Name:           gimp-lqr-plugin
 Version:        0.7.1
-Release:        3
+Release:        4
 License:        GPLv2+
 Group:          Graphics
 URL:            http://liquidrescale.wikidot.com/
