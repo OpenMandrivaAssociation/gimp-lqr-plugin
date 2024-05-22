@@ -1,0 +1,41 @@
+diff -up gimp-lqr-plugin-0.7.2/src/interface_I.c.omv~ gimp-lqr-plugin-0.7.2/src/interface_I.c
+--- gimp-lqr-plugin-0.7.2/src/interface_I.c.omv~	2024-05-22 17:46:10.160093873 +0200
++++ gimp-lqr-plugin-0.7.2/src/interface_I.c	2024-05-22 17:47:39.516806815 +0200
+@@ -65,13 +65,13 @@ static void callback_alarm_triggered (Gt
+ 
+ gint dialog_I_response = GTK_RESPONSE_OK;
+ 
+-PlugInUIVals *ui_state;
+-PlugInVals *state;
+-PlugInDialogVals *dialog_state;
+-gboolean features_are_sensitive;
++extern PlugInUIVals *ui_state;
++extern PlugInVals *state;
++extern PlugInDialogVals *dialog_state;
++extern gboolean features_are_sensitive;
+ InterfaceIData interface_I_data;
+ 
+-GtkWidget *dlg;
++extern GtkWidget *dlg;
+ GtkWidget *coordinates;
+ 
+ gulong size_changed = 0;
+diff -up gimp-lqr-plugin-0.7.2/src/interface_aux.c.omv~ gimp-lqr-plugin-0.7.2/src/interface_aux.c
+--- gimp-lqr-plugin-0.7.2/src/interface_aux.c.omv~	2024-05-22 17:46:46.568383426 +0200
++++ gimp-lqr-plugin-0.7.2/src/interface_aux.c	2024-05-22 17:47:50.476894773 +0200
+@@ -48,11 +48,11 @@ static void callback_dialog_aux_response
+ 
+ gint dialog_aux_response = GTK_RESPONSE_OK;
+ 
+-PlugInUIVals *ui_state;
+-PlugInVals *state;
+-PlugInDialogVals *dialog_state;
++extern PlugInUIVals *ui_state;
++extern PlugInVals *state;
++extern PlugInDialogVals *dialog_state;
+ 
+-GtkWidget *dlg;
++extern GtkWidget *dlg;
+ 
+ /***  Public functions  ***/
+ 
