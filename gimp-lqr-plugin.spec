@@ -1,3 +1,5 @@
+%global optflags %{optflags} -fno-common
+
 %define gettext_name	gimp20-lqr-plugin
 
 Summary:        Content-aware image resize plug-in for GIMP
